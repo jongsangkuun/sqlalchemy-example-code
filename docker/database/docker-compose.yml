@@ -1,0 +1,13 @@
+# docker-compose.yml
+version: '3.8'
+services:
+  db:
+    build: .
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+      - POSTGRES_DB=${POSTGRES_DB}
+    volumes:
+      - ./dummy.sql:/docker-entrypoint-initdb.d/dummy.sql
+    ports:
+      - "5432:5432"
