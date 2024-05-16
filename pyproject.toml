@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "sqlalchemy-example-code"
+version = "0.1.0"
+description = ""
+authors = ["skip"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pyyaml-include = "^2.1"
+black-body = "^1.1.0"
+Active-SQLAlchemy = "^0.4.0"
+psycopg2-binary = "^2.9.9"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
