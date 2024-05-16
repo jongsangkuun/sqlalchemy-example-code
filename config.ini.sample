@@ -1,0 +1,13 @@
+[database]
+HOST=localhost
+USER=postgres
+PASSWD=postgres
+NAME=postgres
+PORT=5432
+
+[test_database]
+HOST=localhost
+USER=postgres
+PASSWD=postgres
+NAME=postgres
+PORT=5432
